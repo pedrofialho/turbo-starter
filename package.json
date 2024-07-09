@@ -6,8 +6,7 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,js,cjs,mjs,md}\"",
-    "config": "scripts/config.mjs"
+    "format": "prettier --write --cache ."
   },
   "devDependencies": {
     "eslint": "^8.57.0",

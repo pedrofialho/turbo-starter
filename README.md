@@ -1,13 +1,22 @@
-# Turborepo Tailwind CSS starter
+# turbo-starter
 
-This is an official starter Turborepo.
+This is a starter built on top of the [Turborepo Tailwind CSS starter](https://github.com/vercel/turbo/tree/main/examples/with-tailwind).
 
 ## Using this example
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e with-tailwind
+npx create-turbo@latest -e https://github.com/pedrofialho/turbo-starter
+```
+
+## Setup
+
+1. Make sure [Node](https://nodejs.org/en/download/package-manager) is installed (tip: use [fnm](fnm.vercel.app));
+1. Run the setup script:
+
+```sh
+scripts/setup.mjs
 ```
 
 ## What's inside?
@@ -28,7 +37,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 This example is set up to produce compiled styles for `ui` components into the `dist` directory. The component `.tsx` files are consumed by the Next.js apps directly using `transpilePackages` in `next.config.js`. This was chosen for several reasons:
 
-- Make sharing one `tailwind.config.js` to apps and packages as easy as possible.
+- Make sharing one `tailwind.config.ts` to apps and packages as easy as possible.
 - Make package compilation simple by only depending on the Next.js Compiler and `tailwindcss`.
 - Ensure Tailwind classes do not overwrite each other. The `ui` package uses a `ui-` prefix for it's classes.
 - Maintain clear package export boundaries.
