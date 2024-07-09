@@ -2,6 +2,15 @@
 module.exports = {
   singleQuote: true,
   semi: false,
-  plugins: [require.resolve('prettier-plugin-tailwindcss')],
+  plugins: ['prettier-plugin-tailwindcss'],
   tailwindFunctions: ['cn', 'cva'],
+  overrides: [
+    {
+      files: ['*.yml', '*.yaml'],
+      options: {
+        singleQuote: false,
+        semi: true,
+      },
+    },
+  ],
 }
