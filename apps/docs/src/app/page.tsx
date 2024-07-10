@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import { Card } from '@repo/ui/next/card'
 
 function Gradient({
@@ -51,7 +52,7 @@ export default function Page(): JSX.Element {
           examples/with-tailwind -&nbsp;
           <code className="font-mono font-bold">docs</code>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black lg:static lg:size-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https://vercel.com?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"
@@ -82,15 +83,15 @@ export default function Page(): JSX.Element {
                 width={614}
               />
             </div>
-            <div className="absolute z-50 flex h-64 w-64 items-center justify-center">
+            <div className="absolute z-50 flex size-64 items-center justify-center">
               <Gradient
-                className="h-[120px] w-[120px] opacity-90"
+                className="size-[120px] opacity-90"
                 conic
                 small
               />
             </div>
 
-            <div className="z-50 h-[120px] w-[120px]">
+            <div className="z-50 size-[120px]">
               <Image
                 alt=""
                 height={120}
@@ -101,7 +102,7 @@ export default function Page(): JSX.Element {
             </div>
           </div>
           <Gradient
-            className="top-[-500px] h-[1000px] w-[1000px] opacity-[0.15]"
+            className="top-[-500px] size-[1000px] opacity-15"
             conic
           />
           <div className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6">
